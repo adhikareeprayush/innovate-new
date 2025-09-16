@@ -324,10 +324,6 @@ nav {
   width: 7px !important;
 }
 
-.swiper3 p {
-  font-size: 20px !important;
-}
-
 .swiper3 h5 {
   text-transform: uppercase;
 }
@@ -344,6 +340,12 @@ nav {
 
 /* Managing the responsiveness  */
 
+@media (max-width: 1920px) {
+  section {
+    padding: 50px 60px;
+  }
+}
+
 @media (max-width: 1680px) {
   hero {
     padding: 80px 40px;
@@ -352,23 +354,50 @@ nav {
   hero .hero-text {
     max-width: 600px;
   }
+
+  .main-swiper,
+  .swiper3,
+  .swiper4,
+  .swiper5 {
+    padding: 40px 80px;
+  }
 }
 
 @media (max-width: 1480px) {
   hero {
     padding: 60px 20px;
   }
+
+  .number-slide {
+    gap: 10px !important;
+  }
+
+  .number-slide span {
+    font-size: 100px;
+    line-height: 120px;
+  }
+
+  .number-slide img {
+    width: 40px;
+    height: 70px;
+    right: -5px;
+  }
+
+  .number-slide h5 {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 @media (max-width: 1440px) {
   section {
-    padding: 40px 80px;
+    padding: 40px 60px;
   }
   .main-swiper,
   .swiper3,
   .swiper4,
   .swiper5 {
-    padding: 40px 40px;
+    padding: 40px 60px;
   }
 }
 
