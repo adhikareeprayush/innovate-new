@@ -18,9 +18,7 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <nav
-      class="w-100 d-flex align-items-center justify-content-between bg-primary py-3"
-    >
+    <nav class="w-100 d-flex align-items-center justify-content-between py-3">
       <div class="d-flex align-items-center gap-2">
         <img src="assets/hero/Innovate_TN.svg" alt="" />
         <img src="assets/hero/Forge_Logo.svg" alt="" />
@@ -48,11 +46,13 @@
         </h1>
       </div>
       <div class="position-absolute top-0 start-0 w-100 h-100 background-hero">
-        <img
-          src="assets/hero/bg.jpg"
-          alt=""
+        <video
+          src="assets/hero/bg.webm"
           class="w-100 h-100 object-fit-cover"
-        />
+          autoplay
+          muted
+          loop
+        ></video>
       </div>
       <div class="hero-background-overlay"></div>
     </hero>
@@ -99,7 +99,7 @@
         <div class="d-flex flex-column gap-1 grid-cols">
           <span class="metric-title">11485</span>
           <div class="d-flex flex-column metric-description">
-            <span class="fw-bold">STUDENTS</span>
+            <span class="fw-bold" style="line-height: 1;">STUDENTS</span>
             <span class="fw-normal">Trained</span>
           </div>
         </div>
@@ -379,7 +379,7 @@
           </div>
           <div class="swiper-slide swiper-slide-two">
             <h4 class="text-secondary">Innovation Foundation</h4>
-            <h3 class="mb-3">Sprints</h3>
+            <h3 class="mb-3 text-uppercase">Sprints</h3>
             <p class="text-white">
               The Innovation Foundation Sprints are the first phase of Forge’s
               multi-semester Innovation Practicum, guiding students through four
@@ -537,8 +537,9 @@
                     class="text-secondary d-flex flex-column"
                     style="font-weight: 500 !important"
                   >
-                    <h4 class="text-secondary">Multidisciplinary Tech</h4>
-                    <h4 class="text-secondary">Immersion</h4>
+                    <h4 class="text-secondary">
+                      Multidisciplinary Tech IMMERSION
+                    </h4>
                   </div>
                   <p class="text-white">
                     Practical exposure to IoT, AI, robotics, AR/VR, additive
@@ -666,7 +667,7 @@
             <div class="d-flex w-100 justify-content-between">
               <div class="d-flex flex-column">
                 <h4 class="text-secondary">Product accelerator</h4>
-                <h3 class="mb-3">Grassroot Innovations</h3>
+                <h3 class="mb-3 text-uppercase">Grassroot Innovations</h3>
               </div>
             </div>
             <p class="text-white">
@@ -736,7 +737,7 @@
     </section>
 
     <section class="bg-tertiary position-relative">
-      <h2 style="text-align: left">Product Innovations</h2>
+      <h2 style="text-align: left; font-size: 32px">Product Innovations</h2>
       <div class="product-innovations-swiper overflow-x-hidden">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -817,7 +818,10 @@
             class="swiper-slide d-flex flex-column justify-content-between align-items-center h-full"
           >
             <div class="d-flex flex-column">
-              <h3 class="" style="text-align: left; font-size: 32px">
+              <h3
+                class="text-uppercase"
+                style="text-align: left; font-size: 32px"
+              >
                 Manufacturing Technology Practicum
               </h3>
               <p class="text-white">
@@ -915,7 +919,9 @@
           </div>
 
           <div class="swiper-slide swiper-slide-two">
-            <h4 class="text-secondary mb-0">innovation practicum</h4>
+            <h4 class="text-secondary mb-0 text-uppercase">
+              innovation practicum
+            </h4>
             <h3 class="mb-3 text-uppercase">industrial workforce</h3>
             <p class="text-white" style="font-size: 16px">
               The Innovation Practicum for Industrial Workforce (IP-IW)
@@ -1171,10 +1177,13 @@
       class="d-flex flex-xl-row flex-column align-items-start justify-content-between w-100 gap-xl-5 gap-2"
     >
       <div class="section-title-left">
-        <span class="fw-normal" style="font-size: 20px"
-          >Offerings for Industrial Companies</span
+        <p
+          class="fw-normal mb-2"
+          style="font-size: 20px !important; line-height: 20px"
         >
-        <br />Managed Innovation
+          Offerings for Industrial Companies
+        </p>
+        Managed Innovation
         <br />
         <span class="fw-bolder"> projects & Services</span>
       </div>
