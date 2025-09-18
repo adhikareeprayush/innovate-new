@@ -109,7 +109,7 @@ nav img:nth-child(1) {
 }
 
 .btn:hover {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: white;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -625,5 +625,82 @@ section {
 @media (max-width: 576px) {
   section {
     padding: 50px 20px;
+  }
+}
+
+.contact-form {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.contact-form:hover {
+  transform: translateY(-5px);
+}
+.form-control {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.form-control:focus {
+  border-color: #e50012;
+  box-shadow: 0 0 0 0.2rem rgba(229, 0, 18, 0.25);
+}
+.form-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+.btn-danger {
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.btn-danger:hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+}
+.contact-info {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+.contact-info p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+.contact-info i {
+  color: #e50012;
+  font-size: 1.2rem;
+}
+.location-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+.location-card:hover {
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.location-card p {
+  margin-bottom: 0px;
+}
+.location-card h5 {
+  color: #e50012;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 0;
+  }
+  .contact-info {
+    margin-top: 30px;
   }
 }
