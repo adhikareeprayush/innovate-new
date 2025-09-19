@@ -644,7 +644,7 @@ section {
   font-size: 1rem;
 }
 .form-control:focus {
-  border-color: #e50012;
+  border-color: #23336a;
   box-shadow: 0 0 0 0.2rem rgba(229, 0, 18, 0.25);
 }
 .form-label {
@@ -673,7 +673,7 @@ section {
   line-height: 1.6;
 }
 .contact-info i {
-  color: #e50012;
+  color: var(--secondary-color);
   font-size: 1.2rem;
 }
 .location-card {
@@ -692,7 +692,7 @@ section {
   margin-bottom: 0px;
 }
 .location-card h5 {
-  color: #e50012;
+  color: #23336a;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -703,4 +703,10 @@ section {
   .contact-info {
     margin-top: 30px;
   }
+}
+
+.swiper4 .swiper-slide img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
 }

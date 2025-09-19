@@ -6,19 +6,18 @@ function animateCounter(element, targetValue, duration = 2000) {
     const elapsed = currentTime - startTime;
     const progress = Math.min(elapsed / duration, 1);
 
-    // Easing function for smooth animation (ease-out)
     const easeOut = 1 - Math.pow(1 - progress, 3);
 
     const currentValue = Math.round(
       startValue + (targetValue - startValue) * easeOut
     );
 
-    element.textContent = currentValue.toLocaleString();
+    element.textContent = currentValue;
 
     if (progress < 1) {
       requestAnimationFrame(updateCounter);
     } else {
-      element.textContent = targetValue.toLocaleString();
+      element.textContent = targetValue;
     }
   }
 
